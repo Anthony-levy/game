@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bird.css">
+    <title>Bird</title>
+</head>
+
+<body>
+
+<h1>Welcome to Flappy Bird</h1>
+
+<div class="tab">
+  <button class="tab" onclick="goToPage('index.html')">About</button>
+  <button class="tab" onclick="goToPage('snake.html')">Snake</button>
+  <button class="tab" onclick="goToPage('bird.html')">Flappy Bird</button>
+</div>
+
+<section class="inst">
+  <h2>Instructions</h2>
+  <p>Press SPACE or TAP SCREEN to start and flap.</p>
+</section>
+
+<section class="game-container">
+  <div class="game-box">
+
+    <div id="gameContainer"></div>
+
+    <div id="overlay" class="overlay">
+        <div id="overlayText"></div>
+        <br>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/bird.js"></script>
+
+</body>
+</html>

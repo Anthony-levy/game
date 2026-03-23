@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- link to the css and javascript pages for the snake -->
+<link rel="stylesheet" href="css/snake.css">
+
+<!-- title for the snake page-->
+<title>
+Snake
+</title>
+</head>
+<body>
+<!-- welcome to the snake game -->
+<h1>
+Welcome to Snake
+
+
+</h1>
+
+<!-- div container for the buttons to switch between pages -->
+<div class="tab">
+  <button class="tab" onclick="goToPage('index.html')">About</button>
+  <button class="tab" onclick="goToPage('snake.html')">Snake</button>
+  <button class="tab" onclick="goToPage('bird.html')">Flappy Bird</button>
+  
+</div>
+<!-- section that will hold the instructions of the snake game -->
+
+<section class="inst">
+  <h2>Instructions</h2>
+  <p>Use Arrow Keys to move. Eat food to grow. Don’t hit walls or yourself.</p>
+</section>
+
+<!-- GAME -->
+<section class="game-container">
+  <div class="game-box">
+
+    <div id="gameContainer"></div>
+
+    <div id="overlay" class="overlay">
+        <div id="overlayText"></div>
+        <br>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+  </div>
+</section>
+<div class="controls">
+    <button onclick="moveUp()">⬆️</button>
+    <div>
+        <button onclick="moveLeft()">⬅️</button>
+        <button onclick="moveDown()">⬇️</button>
+        <button onclick="moveRight()">➡️</button>
+    </div>
+</div>
+
+
+<script src="js/snake.js"></script>
+</body>
+</html>

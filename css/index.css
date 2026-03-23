@@ -1,0 +1,66 @@
+/* CSS file*/
+body {
+	margin: 0;
+    background-color: lightgreen; /* light green background */
+    text-align: center;
+    overflow: hidden;
+}
+h1 {
+ 
+  background-color: white; /* change the background color for the h1 class to white*/
+  border-radius: 10px; /* to adjust the border radius to make the corner rounded*/
+  padding: 15px; /* padding set to create space between the content in the h1 and the border*/
+  text-align: center; /* align the text in the h1 element */
+  margin-bottom: 15px; /* Add Space between h1 and the div at the bottom */
+
+}
+
+.tab {
+  display: flex;             /* lines up the content in the container to fit to the size of the container  */
+  justify-content: center;   /* Center buttons horizontally in the flex container */
+  gap: 15px;              /* sets space between content in the flex container*/
+  overflow: hidden;       /* hides content that are too big to fit in the container*/
+  border: 1px solid #ccc;  /* sets border width and design of the container*/
+  background-color: #f1f1f1; /* changes background color of the tab container*/
+}
+
+/* Style the buttons inside the tab class */
+.tab button {
+  background-color: white; /*set the background color of the button */
+  float: left; 	/* pushes the button to the left*/
+  border: none; /* sets no border on the button so it can align and stay flush with the outside */
+  cursor: pointer; /* change the cursor to the pointing finger when passing over the button*/
+  padding: 14px 16px; /* create space in the button between the text and the border*/
+  transition: 0.3s; /* adjust speed of which the color changes when the cursor hovers over the button*/
+  font-size: 17px;   /* changes the size of the text in the button*/
+  flex: 1;                   /* Stretch to fill equally */
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover { /* changes the color of the button when the cursor hovers over it */
+  background-color: #FFB6C1; /* background color of the button */
+}
+
+
+  /* css for the about information of the page */
+.inst {
+  background-color: #f0f0f0;  
+  color: black;                  /* dark text for readability */
+  border-radius: 10px;          /* rounded corners */
+  padding: 20px;
+  max-width: 800px;             /* limit width for readability */
+  margin: 30px auto;            /* center the section with top/bottom spacing */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.inst h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.inst p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
